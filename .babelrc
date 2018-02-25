@@ -1,0 +1,26 @@
+{
+  "presets": [
+    "react",
+    "airbnb",
+    [
+      "es2015",
+      {
+        "modules": false
+      }
+    ],
+    "stage-2"
+  ],
+  "plugins": [
+    [
+      "react-css-modules",
+      {
+        "filetypes": {
+          ".scss": {
+            "syntax": "postcss-scss"
+          }
+        },
+        "generateScopedName": "[name]__[local]___[hash:base64:5]"
+      }
+    ]
+  ]
+}
